@@ -1,0 +1,26 @@
+<div class="container mt-3">
+    <form class="col-md-6 offset-sm-2">
+        <div class="row mb-3">
+            <label for="inputNombre" class="col-sm-2 col-form-label">Nombre</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputNombre" [(ngModel)]="nombre" name="nombre" value={{nombre}}>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputApellido" class="col-sm-2 col-form-label">Apellido</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputApellido" [(ngModel)]="apellido" name="apellido" value={{apellido}}>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputDni" class="col-sm-2 col-form-label">DNI</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputDni" [(ngModel)]="dni" name="dni" value={{dni}}>
+            </div>
+        </div>
+        <br>
+        <button type="button" class="btn btn-primary offset-sm-3" (click)="returnListaPersonas()">Volver</button>
+        <button type="button" class="btn btn-primary offset-sm-4" (click)="editarPersona()">Guardar</button>
+        
+    </form>
+</div>
